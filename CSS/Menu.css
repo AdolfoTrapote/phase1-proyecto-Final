@@ -1,0 +1,88 @@
+body{
+background-color:#080808;
+color: #FDFEFE;
+background-image: url("logo.jpg");
+}
+nav{
+width:850px;
+height:60px;
+background-color:#226666;
+margin:0 auto;
+border-radius: 20px;
+}
+#menu{
+list-style:none;
+list-style-position:inside;
+width:800px;
+margin:0 auto;
+display:block;
+text-align:center;
+}
+#menu li{
+float:left;
+padding:20px;
+width:150px;
+position:relative;
+}
+#menu li ul{
+list-style:none;
+list-style-position:inside;
+display:none;
+position:absolute;
+top:60px;
+left:-42px;
+z-index:1;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+#menu .ultimo{
+border-radius:0 0 10px 10px;
+border:2px white solid;
+border-top:none;
+}
+/* opciones del submenu. */
+#menu li ul li{
+background-color:#9797D9;
+padding: 10px;
+width:170px;
+border-bottom:2px white solid;
+border-left:2px white solid;
+border-right:2px white solid;
+}
+/* opción principal */
+#menu li:hover{
+background-color:#801515;
+border-left:2px white solid;
+border-right:2px white solid;
+}
+/* Hace visible submenu*/
+#menu li:hover > ul{
+display:block;
+}
+/* enlaces */
+#menu a, #menu a:visited{
+color:white;
+text-decoration:none;
+font-family:sans-serif;
+font-weight:bold;
+outline:none;
+}
+#menu a:hover{
+text-decoration:underline;
+}
